@@ -63,7 +63,7 @@ const Testimonial = ({
 
             <div className="tiles-item reveal-from-right" data-reveal-delay="200">
               <div className="tiles-item-inner">
-                <img src={RuchaImg}></img>
+                <img src={RuchaImg} alt='Rucha-img'></img>
                   <p className="text-sm mb-0">
                     A biomedical engineering student from Trinity College Dublin.
                   </p>
@@ -71,7 +71,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Rucha Benare</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a>benarer@tcd.ie</a>
+                    <a href='/'>benarer@tcd.ie</a>
                   </span>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const Testimonial = ({
 
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
-              <img src={PeterImg}></img>
+              <img src={PeterImg} alt='Peter-img'></img>
                 <p className="text-sm mb-0">
                     An electrical engineering student from Trinity College Dublin.
                   </p>
@@ -87,7 +87,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Peter O'Flynn</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a>poflynn@tcd.ie</a>
+                    <a href='/'>poflynn@tcd.ie</a>
                   </span>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const Testimonial = ({
 
             <div className="tiles-item reveal-from-left" data-reveal-delay="200">
               <div className="tiles-item-inner">
-              <img src={JamesImg}></img>
+              <img src={JamesImg} alt='James-img'></img>
                 <p className="text-sm mb-0">
                     An computer engineering student from University College Dublin.
                   </p>
@@ -103,7 +103,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">James Callanan</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a>james.callanan@ucdconnect.ie</a>
+                    <a href='/'>james.callanan@ucdconnect.ie</a>
                   </span>
                 </div>
               </div>

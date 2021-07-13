@@ -2,6 +2,9 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
+import RuchaImg from '../../assets/images/rucha.png'
+import PeterImg from '../../assets/images/peter.png'
+import JamesImg from '../../assets/images/james.jpeg'
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -44,8 +47,8 @@ const Testimonial = ({
   );
 
   const sectionHeader = {
-    title: 'Customer testimonials',
-    paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+    title: 'Meet our team',
+    paragraph: 'A team of engineering students looking to make a difference.'
   };
 
   return (
@@ -53,23 +56,22 @@ const Testimonial = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container">
+      <div id="meet-our-team" className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
 
             <div className="tiles-item reveal-from-right" data-reveal-delay="200">
               <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
+                <img src={RuchaImg}></img>
                   <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
+                    A biomedical engineering student from Trinity College Dublin.
+                  </p>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Roman Level</span>
+                  <span className="testimonial-item-name text-color-high">Rucha Benare</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
+                    <a>benarer@tcd.ie</a>
                   </span>
                 </div>
               </div>
@@ -77,16 +79,15 @@ const Testimonial = ({
 
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
+              <img src={PeterImg}></img>
+                <p className="text-sm mb-0">
+                    An electrical engineering student from Trinity College Dublin.
+                  </p>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Diana Rynzhuk</span>
+                  <span className="testimonial-item-name text-color-high">Peter O'Flynn</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
+                    <a>poflynn@tcd.ie</a>
                   </span>
                 </div>
               </div>
@@ -94,16 +95,15 @@ const Testimonial = ({
 
             <div className="tiles-item reveal-from-left" data-reveal-delay="200">
               <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
+              <img src={JamesImg}></img>
+                <p className="text-sm mb-0">
+                    An computer engineering student from University College Dublin.
+                  </p>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Ben Stafford</span>
+                  <span className="testimonial-item-name text-color-high">James Callanan</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
+                    <a>james.callanan@ucdconnect.ie</a>
                   </span>
                 </div>
               </div>

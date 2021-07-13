@@ -56,6 +56,7 @@ const Header = ({
     document.body.classList.remove('off-nav-is-active');
     nav.current && (nav.current.style.maxHeight = null);
     setIsactive(false);
+    document.getElementById('meet-our-team').scrollIntoView();
   }
 
   const keyPress = (e) => {
@@ -106,21 +107,12 @@ const Header = ({
                     isActive && 'is-active'
                   )}>
                 <div className="header-nav-inner">
-                  <ul className={
-                    classNames(
-                      'list-reset text-xs',
-                      navPosition && `header-nav-${navPosition}`
-                    )}>
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
-                    </li>
-                  </ul>
                   {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Contact Us</Link>
                       </li>
                     </ul>}
                 </div>
